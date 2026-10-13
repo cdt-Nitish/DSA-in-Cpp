@@ -13,6 +13,7 @@ class Solution {
 public:
     int MaxSum(TreeNode* node, int& maxsum){
         if(node==NULL)return 0;
+        // To igmore the negative value
         int left=max(0,MaxSum(node->left,maxsum));
         int right=max(0,MaxSum(node->right,maxsum));
 
